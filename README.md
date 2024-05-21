@@ -1,8 +1,20 @@
-# React + Vite
+# Movie-Ranking-Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
 
-Currently, two official plugins are available:
+- The Movie Ranking Platform project is designed to cater for the needs of the movie enthusiasts and providing experience for exploring the world of cinema. In this Project i get to showcase my skills in front-end development.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Technologies Used
+
+- React
+- Tailwindcss
+- JavaScript
+
+### Installation
+
+- Clone the repository on your machine,
+- git clone https://github.com/Patrickodida/React-Movie-Ranking-Platform.git
+
+### Contribution
+
+- Feel free to contribute to this project.
