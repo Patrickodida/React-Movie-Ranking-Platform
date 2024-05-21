@@ -1,0 +1,13 @@
+:root{
+    --clr-primary-blue: #030637;
+    --clr-secondary-pink: #720455;
+    --clr-Gray: #212846;
+    --clr-white: #f2f2f2;
+    --clr-Purple: #4a0654;
+
+    --ff-body: "Poppins", sans-serif;
+}
+
+body {
+    font-family: var(--ff-body);
+}
