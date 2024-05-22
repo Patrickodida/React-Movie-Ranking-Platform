@@ -10,7 +10,7 @@ function Navbar(){
 
     return (
         <div className="bg-[#720455] text-[#f2f2f2] fixed left-0 top-0 right-0 z-50 w-full ">
-            <section className="relative flex justify-between w-[90%] m-auto m-w-[1280px] items-center   ">
+            <section className="relative flex justify-between w-[90%] m-auto m-w-[1280px] items-center ">
                 <Link to="/" className="font-[900] text-[3rem]">
                     <span>MRP</span>
                 </Link>
