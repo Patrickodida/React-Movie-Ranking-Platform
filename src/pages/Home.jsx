@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import homeImage from '../images/ghostbusters-action-poster.webp';
 import GenreCard from "../components/GenreCard";
+import Footer from "../components/Footer";
 
 function Home(){
     return (
@@ -15,6 +16,7 @@ function Home(){
              />
              <h1 className="text-[#f2f2f5]">Movie Genres</h1>
              <GenreCard />
+             <Footer />
         </div>
     )
 }
