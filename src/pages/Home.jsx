@@ -9,6 +9,7 @@ import Footer from "../components/Footer";
 
 function Home() {
   const [genres, setGenres] = useState(null);
+  const [movies, setMovies] = useState(null);
 
   const fetchData = () => {
     let apiUrl = "http://localhost:1337/api/genres?populate=*";
@@ -26,6 +27,23 @@ function Home() {
     fetchData();
   }, []);
 
+  // Fetch movies data
+  const fetchMovieData = () => {
+    let apiMovieUrl = "http://localhost:1337/api/movies?populate=*";
+    fetch(apiMovieUrl)
+    .then((response)=>{
+      return response.json();
+    })
+    .then((movieObjectData)=>{
+      let movieData = movieObjectData.data;
+      setMovies(movieData);
+    })
+  }
+
+  useEffect(()=>{
+    fetchMovieData()
+  },[]);
+
   return (
     <div className="bg-[#030637] text-[#f2f2f5]">
       <Navbar />
@@ -35,7 +53,7 @@ function Home() {
         image={homeImage}
       />
       <h1 className="text-[#f2f2f5] mt-[3rem] pb-8 text-center text-[2.25rem] font-bold">Movie Genres</h1>
-      <section className="grid grid-cols-4 gap-[5%] w-[90%] m-auto pb-16">
+      <section className="grid grid-cols-4 gap-[5%] w-[90%] m-auto mb-8 pb-16">
         { genres !== null ? (
             genres.map((item) => {
           return (
@@ -52,10 +70,26 @@ function Home() {
         }
       </section>
       <h1 className="text-[#f2f2f5] mt-[3rem] pb-8 text-center text-[2.25rem] font-bold">Favourite Movies</h1>
-      <section className="fav-movie">
-        <FavMovieCard />
+      <section className="fav-movie grid grid-cols-2 gap-[2%] w-[90%] m-auto mb-8 pb-16">
+        { movies !== null ? (
+          movies.map((item)=>{
+            return (
+              <FavMovieCard
+              key={item.id}
+              movie={item.attributes.title}
+              image={`http://localhost:1337${item.attributes.image.data.attributes.url}`}
+              rank={item.attributes.image.data.id}
+         />
+            )
+          })
+        ) : (
+          <p>Loading...</p>
+        )
+          
+        }
+        
       </section>
-      <section class="footer">
+      <section class="footer mt-[45em]">
         <Footer />
       </section>
     </div>
