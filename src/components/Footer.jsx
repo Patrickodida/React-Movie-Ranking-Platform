@@ -3,70 +3,68 @@ import { Link } from 'react-router-dom'
 
 function Footer(){
     return (
-        <div className="footer bg-[#212846]">
+        <div className="footer bg-[#212846] py-20">
             <section className="footer-section flex justify-between w-[90%] m-auto">
                 <div className="footer-links">
-                    <h3>Movie Links</h3>
+                    <h3 className="text-[1.65rem] font-bold mb-4">Movie Links</h3>
                     <ul>
-                        <li>
+                        <li className="text-[1.1rem] mb-2 hover:text-[#720455] transition-colors duration-300 ">
                             <Link>MRP Home page</Link>
                         </li>
-                        <li>
+                        <li className="text-[1.1rem] mb-2 hover:text-[#720455] transition-colors duration-300 ">
                             <Link>MRP latest reviews</Link>
                         </li>
-                        <li>
+                        <li className="text-[1.1rem] mb-2 hover:text-[#720455] transition-colors duration-300 ">
                             <Link>Browse movies</Link>
                         </li>
-                        <li>
+                        <li className="text-[1.1rem] hover:text-[#720455] transition-colors duration-300">
                             <Link>Find new channels</Link>
                         </li>
                     </ul>
                 </div>
-                <div className="footer-links">
-                    <h3>MRP</h3>
+                <div className="footer-links text-center">
+                    <h3 className="text-[2.25rem] font-bold mb-1">MRP</h3>
                     <ul>
-                        <li>
+                        <li className="text-[1.1rem] mb-2 hover:text-[#720455] transition-colors duration-300">
                             <Link>About MRP</Link>
                         </li>
-                        <li>
+                        <li className="text-[1.1rem] mb-2 hover:text-[#720455] transition-colors duration-300">
                             <Link>Advertise on MRP</Link>
                         </li>
-                        <li>
+                        <li className="text-[1.1rem] mb-2 hover:text-[#720455] transition-colors duration-300">
                             <Link>Terms of service</Link>
                         </li>
-                        <li>
+                        <li className="text-[1.1rem] mb-2 hover:text-[#720455] transition-colors duration-300">
                             <Link>Get youtube data</Link>
                         </li>
                     </ul>
                 </div>
                 <div className="footer-social-links">
-                    <h3>Contact Us</h3>
-                    <ul className="social-links flex ">
-                        <li>
-                            <Link><i class='bx bxl-twitter'></i></Link>
+                    <h3 className="text-[1.65rem] font-bold mb-8 flex justify-center">Contact Us</h3>
+                    <ul className="social-links flex justify-center">
+                        <li className="mr-4" >
+                            <Link><i class='bx bxl-twitter text-[1.75rem] text-[#720455] hover:opacity-75'></i></Link>
                         </li>
-                        <li>
-                            <Link><i class='bx bxl-linkedin' ></i></Link>
+                        <li className="mr-4">
+                            <Link><i class='bx bxl-linkedin text-[1.75rem] text-[#720455] hover:opacity-75' ></i></Link>
                         </li>
-                        <li>
-                            <Link><i class='bx bxl-instagram'></i></Link>
+                        <li className="mr-4">
+                            <Link><i class='bx bxl-instagram text-[1.75rem] text-[#720455] hover:opacity-75'></i></Link>
                         </li>
-                        <li>
-                            <Link><i class='bx bxl-facebook' ></i></Link>
+                        <li className="">
+                            <Link><i class='bx bxl-facebook text-[1.75rem] text-[#720455] hover:opacity-75' ></i></Link>
                         </li>
                     </ul>
                 </div>
             </section>
-            <section className="footer form">
-                <div>
-
-                </div>
-                <div>
+            <hr className="border-t border-gray-600 shadow-md my-10 w-[90%] m-auto mb-0"></hr>
+            <section className="footer form w-[90%] m-auto">
+                <div className="news-letter pt-20">
                     <form>
-                        <label>Subscribe To Our NewsLetter</label>
-                        <input type="text" placeholder="Email" />
-                        <button type="submit">Submit</button>
-                    </form>
+                        <label className="text-[1.1rem] mr-4">Subscribe To Our NewsLetter</label>
+                        <input type="text" placeholder="Email" className="border-0 outline-none mr-2 py-2 px-1 w-[40%] placeholder:text-[#030637] text-[1.25rem]" />
+                        <button type="submit" className="bg-[#f2f2f5] text-[#030637] border-0 outline-none py-2 px-4 text-[1.25rem] hover:bg-[#030637] hover:text-[#f2f2f5] transition-colors duration-300 hover:border">Submit</button>
+                    </form> 
                 </div>
             </section>
 
