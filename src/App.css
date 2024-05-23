@@ -11,7 +11,3 @@
 body {
     font-family: var(--ff-body);
 }
-
-.footer-ection {
-    box-shadow: 0 2px 0px rgba(0 0 0 / 0.3);
-}
