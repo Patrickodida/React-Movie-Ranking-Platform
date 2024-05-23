@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import homeImage from "../images/ghostbusters-action-poster.webp";
 import GenreCard from "../components/GenreCard";
+import FavMovieCard from "../components/FavMovieCard";
 import Footer from "../components/Footer";
 
 
@@ -49,6 +50,10 @@ function Home() {
             <p>Loading...</p>
         )
         }
+      </section>
+      <h1 className="text-[#f2f2f5] mt-[3rem] pb-8 text-center text-[2.25rem] font-bold">Favourite Movies</h1>
+      <section className="fav-movie">
+        <FavMovieCard />
       </section>
       <section class="footer">
         <Footer />
