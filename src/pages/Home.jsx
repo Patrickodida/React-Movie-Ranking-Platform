@@ -29,7 +29,7 @@ function Home() {
 
   // Fetch movies data
   const fetchMovieData = () => {
-    let apiMovieUrl = "http://localhost:1337/api/movies?populate=*";
+    let apiMovieUrl = "http://localhost:1337/api/movies?populate=*&sort=rank&filters[rank][$eq]=1&filters[rank][$eq]=2&filters[rank][$eq]=3&filters[rank][$eq]=4&filters[rank][$eq]=5";
     fetch(apiMovieUrl)
     .then((response)=>{
       return response.json();
@@ -78,7 +78,7 @@ function Home() {
               key={item.id}
               movie={item.attributes.title}
               image={`http://localhost:1337${item.attributes.image.data.attributes.url}`}
-              rank={item.attributes.image.data.id}
+              rank={item.attributes.rank}
          />
             )
           })
@@ -89,7 +89,7 @@ function Home() {
         }
         
       </section>
-      <section class="footer mt-[45em]">
+      <section class="footer mt-[3em]">
         <Footer />
       </section>
     </div>
