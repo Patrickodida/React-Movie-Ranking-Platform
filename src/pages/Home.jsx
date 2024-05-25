@@ -53,7 +53,7 @@ function Home() {
         image={homeImage}
       />
       <h1 className="text-[#f2f2f5] mt-[3rem] pb-8 text-center text-[2.25rem] font-bold">Movie Genres</h1>
-      <section className="grid grid-cols-4 gap-[5%] w-[90%] m-auto mb-8 pb-16">
+      <section className="grid md:grid-cols-4 grid-rows-1 md:gap-[5%] w-[90%] m-auto mb-8 pb-16">
         { genres !== null ? (
             genres.map((item) => {
           return (
