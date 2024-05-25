@@ -52,7 +52,7 @@ function Home() {
         description="Welcome to our curated collection of top-rated films, where every movie love can find something to cherish. our comprehensive rankings and reviews are here to guide you through the mesmerizing world of cinema."
         image={homeImage}
       />
-      <h1 className="text-[#f2f2f5] mt-[3rem] pb-8 text-center text-[2.25rem] font-bold">Movie Genres</h1>
+      <h1 className="text-[#f2f2f5] mt-[3rem] pb-8 text-center text-[1.875rem] md:text-[2.25rem] font-bold">Movie Genres</h1>
       <section className="grid md:grid-cols-4 grid-rows-1 md:gap-[5%] w-[90%] m-auto mb-8 pb-16">
         { genres !== null ? (
             genres.map((item) => {
@@ -69,7 +69,7 @@ function Home() {
         )
         }
       </section>
-      <h1 className="text-[#f2f2f5] mt-[3rem] pb-8 text-center text-[2.25rem] font-bold">Favourite Movies</h1>
+      <h1 className="text-[#f2f2f5] mt-[3rem] pb-8 text-center text-[1.875rem] md:text-[2.25rem] font-bold">Favourite Movies</h1>
       <section className="fav-movie grid md:grid-cols-2 grid-rows-1 md:gap-[2%] w-[90%] m-auto mb-8 pb-16">
         { movies !== null ? (
           movies.map((item)=>{
