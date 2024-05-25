@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function FavMovieCard( {movie, image, rank }){
     return (
         <div className="bg-[#030637]">
-            <section className="text-center bg-[#212846] rounded-lg flex items-center text-[1.25rem] ">
+            <section className="text-center bg-[#212846] rounded-lg flex items-center text-[1.25rem] mb-12 ">
                 <div className="movie-image w-[50%]">
                 <img src={image} alt="" className="w-full rounded-tl-lg rounded-bl-lg" />
                 </div>
