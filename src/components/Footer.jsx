@@ -43,16 +43,16 @@ function Footer(){
                     <h3 className="text-[1.65rem] font-bold mb-8 flex justify-center">Contact Us</h3>
                     <ul className="social-links flex justify-center">
                         <li className="mr-4" >
-                            <Link><i class='bx bxl-twitter text-[1.75rem] text-[#720455] hover:opacity-75'></i></Link>
+                            <Link><i className='bx bxl-twitter text-[1.75rem] text-[#720455] hover:opacity-75'></i></Link>
                         </li>
                         <li className="mr-4">
-                            <Link><i class='bx bxl-linkedin text-[1.75rem] text-[#720455] hover:opacity-75' ></i></Link>
+                            <Link><i className='bx bxl-linkedin text-[1.75rem] text-[#720455] hover:opacity-75' ></i></Link>
                         </li>
                         <li className="mr-4">
-                            <Link><i class='bx bxl-instagram text-[1.75rem] text-[#720455] hover:opacity-75'></i></Link>
+                            <Link><i className='bx bxl-instagram text-[1.75rem] text-[#720455] hover:opacity-75'></i></Link>
                         </li>
                         <li className="">
-                            <Link><i class='bx bxl-facebook text-[1.75rem] text-[#720455] hover:opacity-75' ></i></Link>
+                            <Link><i className='bx bxl-facebook text-[1.75rem] text-[#720455] hover:opacity-75' ></i></Link>
                         </li>
                     </ul>
                 </div>

@@ -16,7 +16,7 @@ function Navbar(){
                 </Link>
                 <div className="flex items-center w-full justify-end md:hidden">
                     <Link onClick={toggleMenu} className="text-3xl">
-                    <i class={`bx ${menuOpen ? 'bx-x font-bold' : 'bx-menu font-bold' }`}></i>
+                    <i className={`bx ${menuOpen ? 'bx-x font-bold' : 'bx-menu font-bold' }`}></i>
                     </Link>
                 </div>
                 <nav className={`absolute md:relative md:left-auto md:top-auto bg-[#720455] md:bg-transparent block md:flex flex-col md:flex-row md:items-center md:w-full top-10 md:top-5 right-0 left-0  pt-5 md:pt-0 pb-5 md:pb-0 mt-5 md:mt-0 ${menuOpen ? 'block' : 'hidden'} md:flex transition-transform duration-300 ${menuOpen ? 'translate-x-0' : 'translate-x-full'} md:translate-x-0 uppercase `}>

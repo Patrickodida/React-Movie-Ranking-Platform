@@ -12,8 +12,8 @@ function Home() {
   const [movies, setMovies] = useState(null);
 
   const fetchData = () => {
-    /* let apiUrl = "http://localhost:1337/api/genres?populate=*"; */
-    let apiUrl = "https://movie-ranking-platform-backend.onrender.com/api/genres?populate=*"
+    let apiUrl = "http://localhost:1337/api/genres?populate=*";
+   /*  let apiUrl = "https://movie-ranking-platform-backend.onrender.com/api/genres?populate=*" */
     fetch(apiUrl)
       .then((response) => {
         return response.json();
@@ -30,8 +30,8 @@ function Home() {
 
   // Fetch movies data
   const fetchMovieData = () => {
-    /* let apiMovieUrl = "http://localhost:1337/api/movies?populate=*&sort=rank&filters[rank][$eq]=1&filters[rank][$eq]=2&filters[rank][$eq]=3&filters[rank][$eq]=4&filters[rank][$eq]=5"; */
-    let apiMovieUrl = "https://movie-ranking-platform-backend.onrender.com/api/movies?populate=*&sort=rank&filters[rank][$eq]=1&filters[rank][$eq]=2&filters[rank][$eq]=3&filters[rank][$eq]=4&filters[rank][$eq]=5"
+    let apiMovieUrl = "http://localhost:1337/api/movies?populate=*&sort=rank&filters[rank][$eq]=1&filters[rank][$eq]=2&filters[rank][$eq]=3&filters[rank][$eq]=4&filters[rank][$eq]=5";
+    /* let apiMovieUrl = "https://movie-ranking-platform-backend.onrender.com/api/movies?populate=*&sort=rank&filters[rank][$eq]=1&filters[rank][$eq]=2&filters[rank][$eq]=3&filters[rank][$eq]=4&filters[rank][$eq]=5" */
     fetch(apiMovieUrl)
     .then((response)=>{
       return response.json();
@@ -62,8 +62,8 @@ function Home() {
             <GenreCard
               key={item.id}
               genre={item.attributes.title}
-              /* image={`http://localhost:1337${item.attributes.image.data.attributes.url}`} */
-              image={`https://movie-ranking-platform-backend.onrender.com${item.attributes.image.data.attributes.url}`}
+              image={`http://localhost:1337${item.attributes.image.data.attributes.url}`}
+              /* image={`https://movie-ranking-platform-backend.onrender.com${item.attributes.image.data.attributes.url}`} */
             />
           );
         })
@@ -80,9 +80,10 @@ function Home() {
               <FavMovieCard
               key={item.id}
               movie={item.attributes.title}
-              /* image={`http://localhost:1337${item.attributes.image.data.attributes.url}`} */
-              image={`https://movie-ranking-platform-backend.onrender.com${item.attributes.image.data.attributes.url}`}
+              image={`http://localhost:1337${item.attributes.image.data.attributes.url}`}
+              /* image={`https://movie-ranking-platform-backend.onrender.com${item.attributes.image.data.attributes.url}`} */
               rank={item.attributes.rank}
+              youtubeURL={item.attributes.youtubeURL}
          />
             )
           })
@@ -93,7 +94,7 @@ function Home() {
         }
         
       </section>
-      <section class="footer mt-[3em]">
+      <section className="footer mt-[3em]">
         <Footer />
       </section>
     </div>
