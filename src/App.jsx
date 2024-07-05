@@ -5,6 +5,7 @@ import Action from "./pages/Action";
 import Adventure from "./pages/Adventure";
 import Scifi from "./pages/Scifi";
 import Romance from "./pages/Romance";
+import Comedy from "./pages/Comedy";
 
 function App(){
   return (
@@ -14,6 +15,7 @@ function App(){
       <Route path='/Adventure' element={<Adventure />} />
       <Route path='/Scifi' element={<Scifi />} />
       <Route path='/Romance' element={<Romance />} />
+      <Route path='/Comedy' element={<Comedy />} />
     </Routes>
   )
 }
